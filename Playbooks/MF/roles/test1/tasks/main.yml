@@ -1,0 +1,6 @@
+- debug:
+    msg: Running playbook on inventory host {{ inventory_hostname }}
+- shell: /usr/bin/uptime
+  register: result
+- debug:
+    msg: Uptime of host {{ inventory_hostname }} is {{ result.stdout }}

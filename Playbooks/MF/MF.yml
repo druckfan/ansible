@@ -1,0 +1,8 @@
+- hosts: "{{ host }}"
+  gather_facts: no
+  remote_user: sysdrift
+  become: yes
+  become_method: sudo
+  roles:
+  - test
+  - test1
