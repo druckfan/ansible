@@ -1,0 +1,8 @@
+---
+- name: Update Ubuntu system
+  hosts: your_ubuntu_hosts
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
