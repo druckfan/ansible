@@ -1,6 +1,2 @@
-- name: Update Ubuntu system
-  become: yes
-  tasks:
-    - name: Update apt cache
-      apt:
-        update_cache: yes
+- name: Test script on host
+  command: "ls -lrt"
