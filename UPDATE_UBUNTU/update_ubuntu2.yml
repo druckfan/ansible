@@ -1,4 +1,4 @@
-- hosts: {{ env-host }}
+- hosts: "{{ env-host }}"
   gather_facts: yes
   remote_user: sysdrift
   become: yes
