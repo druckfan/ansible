@@ -1,2 +1,4 @@
-- name: Test script on host
-  command: "ls -lrt"
+- name: Running apt-get update
+  apt: 
+    update_cache: yes
+    
